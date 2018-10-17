@@ -53,7 +53,11 @@ func ScanBlock() {
 				if(err == nil){
 					fmt.Println("from: ",from.Hex())
 				}
-				fmt.Println("to: ",tx.To().Hex())
+				if tx.To() != nil {
+					fmt.Println("to: ",tx.To().Hex())
+				} else {
+					fmt.Println("to: 0 - contract creation")
+				}
 				result := tx.Value()
 				fmt.Println("value: ",result)
 				fmt.Println("data: ",tx.Data())
