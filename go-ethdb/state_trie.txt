@@ -1,2 +1,64 @@
-[56c093a349d905ad74b68851304d5dc5f111fbab2c24c4b4d02e96d2fc0727fd, f84c80880de0b6b3a7640000a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a0c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470]
-[761d5c42184a02cc64585ed2ff339fc39a907e82731d70313c83d2212b2da36b, f84c0188c249fdd327780000a056e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421a0c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470]
+RLP Decoding reference: https://github.com/ethereum/wiki/wiki/RLP
+
+State root
+[0d9348243d7357c491e6a61f4b1305e77dc6acacdb8cc708e662f6a9bab6ca02, f8518080808080a018e3b46e84b35270116303fb2a33c853861d45d99da2d87117c2136f7edbd0b980a0717aef38e7ba4a0ae477856a6e7f6ba8d4ee764c57908e6f22643a558db737ff808080808080808080]
+
+key: 0d9348243d7357c491e6a61f4b1305e77dc6acacdb8cc708e662f6a9bab6ca02
+value:
+f8: followed 1 byte is total length
+51: 81 bytes
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+a0: 32 bytes      // slot 
+18e3b46e84b35270116303fb2a33c853861d45d99da2d87117c2136f7edbd0b9
+80: string(empty) // slot 
+a0: 32 bytes      // slot 
+717aef38e7ba4a0ae477856a6e7f6ba8d4ee764c57908e6f22643a558db737ff
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+80: string(empty) // slot 
+
+key: 18e3b46e84b35270116303fb2a33c853861d45d99da2d87117c2136f7edbd0b9
+value:
+f8: followed 1 byte is total length
+71: 113 bytes
+	a0: 32 bytes
+	36c96a349d905ad74b68851304d5dc5f111fbab2c24c4b4d02e96d2fc0727fd
+	b8: followed 1 byte is string length
+	4e: 78 bytes
+		f8: followed 1 byte is total length
+		4c: 76 bytes
+			80: string(empty) // nonce 
+			88: 8 bytes       // balance
+			0de0b6b3a7640000  // 1,000,000,000,000,000,000
+			a0: 32 bytes // empty root  = storage trie
+			56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+			a0: 32 bytes // nil code hash
+			c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
+
+key: 717aef38e7ba4a0ae477856a6e7f6ba8d4ee764c57908e6f22643a558db737ff
+value:
+f8: followed 1 byte is total length
+71: 113 bytes
+	a0: 32 bytes
+	361d5c42184a02cc64585ed2ff339fc39a907e82731d70313c83d2212b2da36b
+	b8: followed 1 byte is string length
+	4e: 78byte
+		f8: followed 1 byte is total length
+		4c: 76 bytes
+			01: 1        //nonce 
+			88:          //blance
+			c249fdd327780000
+			a0: 32 bytes // empty root  = storage trie
+			56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
+			a0: 32 bytes // nil code hash
+			c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
